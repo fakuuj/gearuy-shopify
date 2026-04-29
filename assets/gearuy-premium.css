@@ -1,0 +1,153 @@
+/* ============================================================================
+   GEAR UY | PREMIUM STREETWEAR STYLES
+   ============================================================================ */
+
+/* Typography Overrides */
+h1, h2, h3, .h1, .h2, .h3 {
+  font-weight: 800 !important;
+  letter-spacing: -0.02em !important;
+  text-transform: uppercase !important;
+}
+
+h4, h5, h6, .h4, .h5, .h6 {
+  font-weight: 700 !important;
+  letter-spacing: 0.05em !important;
+  text-transform: uppercase !important;
+}
+
+/* Button & UI Overrides */
+.button, 
+.shopify-challenge__button, 
+.customer button, 
+button.shopify-payment-button__button {
+  border-radius: 0 !important; /* Force sharp corners */
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.05em !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+.product-form__submit {
+  padding: 1.5rem 3rem !important; /* Premium oversized button for main action */
+}
+
+/* Product Cards & Images */
+.card-wrapper {
+  border-radius: 0 !important;
+}
+
+.card__inner {
+  border-radius: 0 !important;
+}
+
+.media img {
+  object-fit: cover !important;
+  border-radius: 0 !important;
+}
+
+/* Subtler focus outlines instead of Shopify default */
+*:focus-visible {
+  outline: 2px solid var(--color-foreground) !important;
+  outline-offset: 2px !important;
+  box-shadow: none !important;
+}
+
+/* "Drop Culture" Badges */
+.badge {
+  border-radius: 0 !important;
+  text-transform: uppercase !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.1em !important;
+  padding: 0.5rem 1rem !important;
+  font-size: 1rem !important;
+  border: none !important;
+}
+
+.badge--sold-out {
+  background-color: #141414 !important;
+  color: #FFFFFF !important;
+}
+
+.badge--sale {
+  background-color: #0B132B !important; /* Navy */
+  color: #FFFFFF !important;
+}
+
+/* Sticky 'Add to Cart' / Product Page Enhancements */
+.product-form__submit {
+  width: 100% !important;
+  font-size: 1.6rem !important;
+}
+
+/* Quantity Selector minimal */
+.quantity {
+  border-radius: 0 !important;
+}
+
+/* Custom Spacing & Premium Feel */
+.page-width {
+  padding-left: 5% !important;
+  padding-right: 5% !important;
+}
+
+@media screen and (min-width: 990px) {
+  .page-width {
+    padding-left: 8% !important;
+    padding-right: 8% !important;
+    max-width: 1600px !important;
+  }
+}
+
+
+/* Mobile Sticky Add to Cart */
+@media screen and (max-width: 768px) {
+  .product-form__buttons {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    padding: 15px !important;
+    background: #FFFFFF !important;
+    z-index: 99 !important;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.1) !important;
+  }
+  .product-form__submit {
+    margin: 0 !important;
+  }
+  /* Add padding to body so content isnt hidden by sticky cart */
+  body {
+    padding-bottom: 90px !important;
+  }
+}
+
+
+/* Cart Drawer Premium Overrides */
+cart-drawer {
+  --color-background: #FFFFFF !important;
+}
+.cart-drawer__header {
+  border-bottom: 2px solid #141414 !important;
+  text-transform: uppercase !important;
+  font-weight: 800 !important;
+}
+.cart-drawer__footer {
+  border-top: 1px solid #E0E0E0 !important;
+  background-color: #F9F9F9 !important;
+}
+.cart-drawer__footer::after {
+  content: '🔒 PAGO 100% SEGURO - ENVÍOS A TODO URUGUAY';
+  display: block;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #141414;
+}
+.cart-drawer .button, .cart-drawer__checkout {
+  width: 100% !important;
+  font-size: 16px !important;
+  padding: 20px !important;
+}
