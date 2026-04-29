@@ -1,149 +1,18 @@
 {
   "sections": {
-    "hero_1": {
-      "type": "hero",
-      "blocks": {
-        "text_1": {
-          "type": "text",
-          "settings": {
-            "text": "<h2>NO VENDEMOS ROPA. CONSTRUIMOS PRESENCIA.</h2>",
-            "type_preset": "h1",
-            "color": "var(--color-foreground)",
-            "case": "uppercase",
-            "alignment": "left"
-          }
-        },
-        "button_1": {
-          "type": "button",
-          "settings": {
-            "label": "COMPRAR AHORA",
-            "link": "shopify://collections/all",
-            "style_class": "button-primary"
-          }
-        },
-        "button_2": {
-          "type": "button",
-          "settings": {
-            "label": "VER COLECCIÓN",
-            "link": "shopify://collections/all",
-            "style_class": "button-secondary"
-          }
-        }
-      },
-      "block_order": [
-        "text_1",
-        "button_1",
-        "button_2"
-      ],
-      "settings": {
-        "color_scheme": "scheme-3",
-        "section_height": "large",
-        "content_direction": "column",
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "toggle_overlay": true,
-        "overlay_color": "#0B132B",
-        "reflection_opacity": 80
-      }
+    "premium_hero": {
+      "type": "premium-hero"
     },
-    "marquee_1": {
-      "type": "marquee",
-      "blocks": {
-        "text_1": {
-          "type": "text",
-          "settings": {
-            "text": "LIMITED EDITION • EXCLUSIVE DROP • LOW STOCK • GEAR UY • SOLD OUT FAST • "
-          }
-        }
-      },
-      "block_order": [
-        "text_1"
-      ],
-      "settings": {
-        "color_scheme": "scheme-1",
-        "speed": 20
-      }
+    "premium_marquee": {
+      "type": "premium-marquee"
     },
-    "featured_products_1": {
-      "type": "product-list",
-      "blocks": {
-        "header_1": {
-          "type": "_product-list-content",
-          "settings": {},
-          "blocks": {
-            "text_1": {
-              "type": "_product-list-text",
-              "settings": {
-                "text": "<h2>NUEVOS INGRESOS</h2>",
-                "type_preset": "h3"
-              }
-            }
-          },
-          "block_order": [
-            "text_1"
-          ]
-        },
-        "product_card": {
-          "type": "_product-card",
-          "blocks": {
-            "gallery": {
-              "type": "_product-card-gallery"
-            },
-            "title": {
-              "type": "product-title"
-            },
-            "price": {
-              "type": "price"
-            }
-          },
-          "block_order": [
-            "gallery",
-            "title",
-            "price"
-          ]
-        }
-      },
-      "block_order": [
-        "header_1",
-        "product_card"
-      ],
-      "settings": {
-        "collection": "all",
-        "columns": 4,
-        "color_scheme": "scheme-1"
-      }
-    },
-    "trust_section": {
-      "type": "media-with-content",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "text": "<h2>CALIDAD Y CONFIANZA</h2>",
-            "type_preset": "h2"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Envíos seguros a todo el país. Pagos encriptados. Calidad premium garantizada en cada prenda.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "color_scheme": "scheme-2",
-        "media_position": "left"
-      }
+    "premium_collection": {
+      "type": "premium-collection"
     }
   },
   "order": [
-    "hero_1",
-    "marquee_1",
-    "featured_products_1",
-    "trust_section"
+    "premium_hero",
+    "premium_marquee",
+    "premium_collection"
   ]
 }

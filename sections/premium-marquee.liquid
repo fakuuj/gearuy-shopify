@@ -1,0 +1,41 @@
+{% schema %}
+{
+  "name": "GEAR UY Marquee",
+  "tag": "section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "GEAR UY Marquee"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="gearuy-marquee">
+  <div class="gearuy-marquee-content">
+    <span>LIMITED EDITION • EXCLUSIVE DROP • LOW STOCK • GEAR UY • SOLD OUT FAST • LIMITED EDITION • EXCLUSIVE DROP • LOW STOCK • GEAR UY • SOLD OUT FAST • LIMITED EDITION • EXCLUSIVE DROP • LOW STOCK • GEAR UY • SOLD OUT FAST •</span>
+  </div>
+</div>
+
+<style>
+.gearuy-marquee {
+  background: #141414;
+  color: #FFFFFF;
+  padding: 15px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-top: 2px solid #333;
+}
+.gearuy-marquee-content {
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+</style>

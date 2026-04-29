@@ -1,0 +1,96 @@
+{% schema %}
+{
+  "name": "GEAR UY Premium Hero",
+  "tag": "section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "GEAR UY Premium Hero"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="gearuy-hero">
+  <div class="gearuy-hero-overlay"></div>
+  <div class="gearuy-hero-content">
+    <h1>NO VENDEMOS ROPA.<br>CONSTRUIMOS PRESENCIA.</h1>
+    <div class="gearuy-hero-buttons">
+      <a href="/collections/all" class="gearuy-btn-primary">COMPRAR AHORA</a>
+      <a href="/collections/all" class="gearuy-btn-secondary">VER COLECCIÓN</a>
+    </div>
+  </div>
+</div>
+
+<style>
+.gearuy-hero {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  min-height: 600px;
+  background-image: url('{{ "gearuy_hero.png" | asset_url }}');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 5%;
+}
+.gearuy-hero-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(to right, rgba(20,20,20,0.9) 0%, rgba(20,20,20,0.2) 100%);
+  z-index: 1;
+}
+.gearuy-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+.gearuy-hero-content h1 {
+  color: #FFFFFF;
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+}
+.gearuy-hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+.gearuy-btn-primary, .gearuy-btn-secondary {
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.gearuy-btn-primary {
+  background: #FFFFFF;
+  color: #141414;
+  border: 1px solid #FFFFFF;
+}
+.gearuy-btn-primary:hover {
+  background: #F0F0F0;
+}
+.gearuy-btn-secondary {
+  background: transparent;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+.gearuy-btn-secondary:hover {
+  background: #FFFFFF;
+  color: #141414;
+}
+@media (max-width: 768px) {
+  .gearuy-hero { height: 75vh; justify-content: center; text-align: center; }
+  .gearuy-hero-overlay { background: rgba(20,20,20,0.7); }
+  .gearuy-hero-content h1 { font-size: 2.5rem; }
+  .gearuy-hero-buttons { flex-direction: column; width: 100%; }
+  .gearuy-btn-primary, .gearuy-btn-secondary { width: 100%; text-align: center; }
+}
+</style>
