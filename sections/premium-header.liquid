@@ -1,0 +1,40 @@
+{% schema %}
+{
+  "name": "GEAR UY Header",
+  "tag": "section"
+}
+{% endschema %}
+
+<header class="gearuy-header">
+  <div class="gearuy-header-top">
+    <span>ENVÍOS EXPRESS A TODO EL PAÍS • STOCK LIMITADO</span>
+  </div>
+  <div class="gearuy-header-main">
+    <nav class="gearuy-nav-left">
+      <a href="/collections/all">Catálogo</a>
+      <a href="#">Drop 001</a>
+    </nav>
+    <a href="/" class="gearuy-logo">
+      <img src="{{ 'logo.png' | asset_url }}" alt="GEAR UY Logo">
+    </a>
+    <nav class="gearuy-nav-right">
+      <a href="/search">Buscar</a>
+      <a href="/cart">Carrito</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+.gearuy-header { width: 100%; position: sticky; top: 0; z-index: 100; background: #fff; border-bottom: 1px solid #eee; }
+.gearuy-header-top { background: #141414; color: #fff; text-align: center; padding: 10px; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; }
+.gearuy-header-main { display: flex; align-items: center; justify-content: space-between; padding: 20px 5%; height: 80px; }
+.gearuy-logo img { height: 40px; width: auto; object-fit: contain; }
+.gearuy-nav-left, .gearuy-nav-right { display: flex; gap: 30px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+.gearuy-nav-left a, .gearuy-nav-right a { color: #141414; text-decoration: none; transition: opacity 0.3s; }
+.gearuy-nav-left a:hover, .gearuy-nav-right a:hover { opacity: 0.5; }
+@media(max-width: 768px) {
+  .gearuy-nav-left { display: none; }
+  .gearuy-logo img { height: 35px; }
+  .gearuy-nav-right { gap: 15px; }
+}
+</style>

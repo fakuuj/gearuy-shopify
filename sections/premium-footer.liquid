@@ -1,0 +1,46 @@
+{% schema %}
+{
+  "name": "GEAR UY Footer",
+  "tag": "section"
+}
+{% endschema %}
+
+<footer class="gearuy-footer">
+  <div class="gearuy-footer-grid">
+    <div class="gearuy-footer-col">
+      <img src="{{ 'logo.png' | asset_url }}" alt="GEAR UY" style="height:30px; filter: invert(1); margin-bottom: 20px;">
+      <p>No vendemos ropa. Construimos presencia.<br>Streetwear premium en Uruguay.</p>
+    </div>
+    <div class="gearuy-footer-col">
+      <h4>Políticas</h4>
+      <a href="#">Cambios y Devoluciones</a>
+      <a href="#">Envíos</a>
+      <a href="#">Términos y Condiciones</a>
+    </div>
+    <div class="gearuy-footer-col">
+      <h4>Contacto</h4>
+      <a href="https://wa.me/59800000000">WhatsApp VIP</a>
+      <a href="https://instagram.com/gearuy_">Instagram @gearuy_</a>
+    </div>
+    <div class="gearuy-footer-col">
+      <h4>Comunidad</h4>
+      <p>Acceso anticipado a drops. Únete a la comunidad.</p>
+    </div>
+  </div>
+  <div class="gearuy-footer-bottom">
+    <p>© {{ 'now' | date: '%Y' }} GEAR UY. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<style>
+.gearuy-footer { background: #141414; color: #fff; padding: 80px 5% 20px 5%; font-size: 13px; }
+.gearuy-footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 60px; }
+.gearuy-footer-col h4 { font-size: 13px; font-weight: 800; text-transform: uppercase; margin-bottom: 20px; letter-spacing: 1px; color: #fff; }
+.gearuy-footer-col p { color: #aaa; line-height: 1.6; }
+.gearuy-footer-col a { display: block; color: #aaa; text-decoration: none; margin-bottom: 12px; transition: color 0.3s; }
+.gearuy-footer-col a:hover { color: #fff; }
+.gearuy-footer-bottom { border-top: 1px solid #333; padding-top: 20px; text-align: center; color: #777; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+@media(max-width: 768px) {
+  .gearuy-footer-grid { grid-template-columns: 1fr; gap: 30px; }
+}
+</style>

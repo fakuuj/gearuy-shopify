@@ -24,10 +24,10 @@
         <p>{{ product.price | money }}</p>
       </a>
     {% else %}
-      <div class="gearuy-card"><div class="gearuy-img-mock" style="background:#141414;"></div><h3>Heavyweight Hoodie - Jet Black</h3><p>$3500</p></div>
-      <div class="gearuy-card"><div class="gearuy-img-mock" style="background:#0B132B;"></div><h3>LA Dodgers 59FIFTY - Fitted</h3><p>$2500</p></div>
-      <div class="gearuy-card"><div class="gearuy-img-mock" style="background:#F0F0F0;"></div><h3>Classic Tee - Off White</h3><p>$1800</p></div>
-      <div class="gearuy-card"><div class="gearuy-img-mock" style="background:#333333;"></div><h3>NY Yankees Trucker - Black</h3><p>$2200</p></div>
+      <div class="gearuy-card"><div class="gearuy-img-mock" style="background-image:url('{{ \"modelo1.png\" | asset_url }}'); background-size:cover; background-position:center;"></div><h3>Outfit Streetwear</h3><p>$1290</p></div>
+      <div class="gearuy-card"><div class="gearuy-img-mock" style="background-image:url('{{ \"gorras3.png\" | asset_url }}'); background-size:cover; background-position:center;"></div><h3>Gorras Premium</h3><p>$1290</p></div>
+      <div class="gearuy-card"><div class="gearuy-img-mock" style="background-image:url('{{ \"modelo2.png\" | asset_url }}'); background-size:cover; background-position:center;"></div><h3>Estilo Urbano</h3><p>$1290</p></div>
+      <div class="gearuy-card"><div class="gearuy-img-mock" style="background-image:url('{{ \"gorras4.png\" | asset_url }}'); background-size:cover; background-position:center;"></div><h3>Gorras Exclusivas</h3><p>$1290</p></div>
     {% endfor %}
   </div>
 </div>

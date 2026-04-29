@@ -8,11 +8,15 @@
     },
     "premium_collection": {
       "type": "premium-collection"
+    },
+    "premium_trust": {
+      "type": "premium-trust"
     }
   },
   "order": [
     "premium_hero",
     "premium_marquee",
-    "premium_collection"
+    "premium_collection",
+    "premium_trust"
   ]
 }

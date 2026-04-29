@@ -1,0 +1,35 @@
+{% schema %}
+{
+  "name": "GEAR UY Trust",
+  "tag": "section",
+  "presets": [{"name": "GEAR UY Trust"}]
+}
+{% endschema %}
+
+<div class="gearuy-trust">
+  <div class="gearuy-trust-item">
+    <h3>ENVÍOS A TODO URUGUAY</h3>
+    <p>Despachos en 24-48hs.</p>
+  </div>
+  <div class="gearuy-trust-item">
+    <h3>CALIDAD PREMIUM</h3>
+    <p>Materiales y acabados de lujo.</p>
+  </div>
+  <div class="gearuy-trust-item">
+    <h3>COMPRA SEGURA</h3>
+    <p>Datos encriptados y protegidos.</p>
+  </div>
+  <div class="gearuy-trust-item">
+    <h3>SOPORTE 24/7</h3>
+    <p>Atención directa vía WhatsApp.</p>
+  </div>
+</div>
+
+<style>
+.gearuy-trust { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding: 80px 5%; background: #F9F9F9; text-align: center; border-top: 1px solid #E0E0E0; }
+.gearuy-trust-item h3 { font-size: 14px; font-weight: 800; text-transform: uppercase; margin-bottom: 10px; color: #141414; letter-spacing: 0.5px; }
+.gearuy-trust-item p { font-size: 13px; color: #555; }
+@media(max-width: 768px) {
+  .gearuy-trust { grid-template-columns: repeat(2, 1fr); gap: 40px 20px; padding: 50px 5%; }
+}
+</style>
